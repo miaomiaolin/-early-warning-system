@@ -1,0 +1,1388 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>layout 后台大布局 - Layui</title>
+  <link rel="stylesheet" href="css/layui.css">
+  <link rel="stylesheet" href="css/index.css">
+  <script src="./js/jquery-1.7.2.js"></script>
+</head>
+<body>
+	<!-- S=主体内容 -->
+	<div class="layui-container">
+		<!-- S=头部开始 -->
+		<div class="layuiHead layui-row layui-bg-black" >
+			<div class="layuiHead_in layui-col-md12">
+			<h1>预警系统</h1>
+			</div>
+		</div>
+		<!-- E=头部结束 -->
+		<!-- S=KPI开始 -->
+		<div class="thisKPI layui-row ">
+			<div class="layui-col-md12">
+			<h3>KPI状况</h3>
+			<div class="layui-row layui-col-space10">
+				<div class="layui-col-md3" >
+					<div class="p10">
+						A团队（KPI绩效：XXX）
+						<div class="layui-row pt5 pb5" >
+							<div class="layui-col-md4" >GMV总量：</div>
+							<div class="layui-col-md8" >
+								<div class="layui-progress layui-progress-big " >30分&nbsp;&nbsp;
+									<div class="layui-progress-bar layui-bg-red" lay-percent="50%">10万&nbsp;&nbsp;</div>
+								</div>
+							</div>
+						</div>
+						<div class="layui-row pt5 pb5"  >
+							<div class="layui-col-md4" >纠纷数量：</div>
+							<div class="layui-col-md8" >
+								<div class="layui-progress layui-progress-big " >20分&nbsp;&nbsp;
+									<div class="layui-progress-bar layui-bg-red" lay-percent="50%" >2例&nbsp;&nbsp;</div>
+								</div>
+							</div>
+							
+						</div>
+						<div class="layui-row pt5 pb5"  >
+							<div class="layui-col-md4" >退款金额：</div>
+							<div class="layui-col-md8" >
+								<div class="layui-progress layui-progress-big " >20分&nbsp;&nbsp;
+									<div class="layui-progress-bar layui-bg-red" lay-percent="75%" >5万&nbsp;&nbsp;</div>
+								</div>
+							</div>
+						</div>
+						<div class="layui-row pt5 pb5"  >
+							<div class="layui-col-md4" >T&nbsp;&nbsp;+&nbsp;&nbsp;90：</div>
+							<div class="layui-col-md8" >
+								<div class="layui-progress layui-progress-big " >30分&nbsp;&nbsp;
+									<div class="layui-progress-bar layui-bg-red" lay-percent="100%">&gt;=90%&nbsp;&nbsp;</div>
+								</div>
+							</div>
+						</div>
+					</div>	
+				</div>
+				<div class="layui-col-md3" >
+					<div class="p10">
+						B团队（KPI绩效：XXX）
+						<div class="layui-row pt5 pb5" >
+							<div class="layui-col-md4" >GMV总量：</div>
+							<div class="layui-col-md8" >
+								<div class="layui-progress layui-progress-big " >30分&nbsp;&nbsp;
+									<div class="layui-progress-bar layui-bg-red" lay-percent="50%" >10万&nbsp;&nbsp;</div>
+								</div>
+							</div>
+						</div>
+						<div class="layui-row pt5 pb5"  >
+							<div class="layui-col-md4" >纠纷数量：</div>
+							<div class="layui-col-md8" >
+								<div class="layui-progress layui-progress-big " >20分&nbsp;&nbsp;
+									<div class="layui-progress-bar layui-bg-red" lay-percent="50%" >2例&nbsp;&nbsp;</div>
+								</div>
+							</div>
+							
+						</div>
+						<div class="layui-row pt5 pb5"  >
+							<div class="layui-col-md4" >退款金额：</div>
+							<div class="layui-col-md8" >
+								<div class="layui-progress layui-progress-big " >20分&nbsp;&nbsp;
+									<div class="layui-progress-bar layui-bg-red" lay-percent="75%" >5万&nbsp;&nbsp;</div>
+								</div>
+							</div>
+						</div>
+						<div class="layui-row pt5 pb5"  >
+							<div class="layui-col-md4" >T&nbsp;&nbsp;+&nbsp;&nbsp;90：</div>
+							<div class="layui-col-md8" >
+								<div class="layui-progress layui-progress-big " >30分&nbsp;&nbsp;
+									<div class="layui-progress-bar layui-bg-red" lay-percent="100%" >&gt;=90%&nbsp;&nbsp;</div>
+								</div>
+							</div>
+						</div>
+					</div>		
+				</div>
+				<div class="layui-col-md3" >
+					<div class="p10">
+						C团队（KPI绩效：XXX）
+						<div class="layui-row pt5 pb5" >
+							<div class="layui-col-md4" >GMV总量：</div>
+							<div class="layui-col-md8" >
+								<div class="layui-progress layui-progress-big " >30分&nbsp;&nbsp;
+									<div class="layui-progress-bar layui-bg-red" lay-percent="50%" >10万&nbsp;&nbsp;</div>
+								</div>
+							</div>
+						</div>
+						<div class="layui-row pt5 pb5"  >
+							<div class="layui-col-md4" >纠纷数量：</div>
+							<div class="layui-col-md8" >
+								<div class="layui-progress layui-progress-big " >20分&nbsp;&nbsp;
+									<div class="layui-progress-bar layui-bg-red" lay-percent="50%" >2例&nbsp;&nbsp;</div>
+								</div>
+							</div>
+							
+						</div>
+						<div class="layui-row pt5 pb5"  >
+							<div class="layui-col-md4" >退款金额：</div>
+							<div class="layui-col-md8" >
+								<div class="layui-progress layui-progress-big " >20分&nbsp;&nbsp;
+									<div class="layui-progress-bar layui-bg-red" lay-percent="75%" >5万&nbsp;&nbsp;</div>
+								</div>
+							</div>
+						</div>
+						<div class="layui-row pt5 pb5"  >
+							<div class="layui-col-md4" >T&nbsp;&nbsp;+&nbsp;&nbsp;90：</div>
+							<div class="layui-col-md8" >
+								<div class="layui-progress layui-progress-big " >30分&nbsp;&nbsp;
+									<div class="layui-progress-bar layui-bg-red" lay-percent="100%" >&gt;=90%&nbsp;&nbsp;</div>
+								</div>
+							</div>
+						</div>
+						
+					</div>	
+				</div>
+				<div class="layui-col-md3" >
+					<div class="p10">
+					D团队（KPI绩效：XXX）
+						<div class="layui-row pt5 pb5" >
+							<div class="layui-col-md4" >GMV总量：</div>
+							<div class="layui-col-md8" >
+								<div class="layui-progress layui-progress-big " >30分&nbsp;&nbsp;
+									<div class="layui-progress-bar layui-bg-red" lay-percent="50%" >10万&nbsp;&nbsp;</div>
+								</div>
+							</div>
+						</div>
+						<div class="layui-row pt5 pb5"  >
+							<div class="layui-col-md4" >纠纷数量：</div>
+							<div class="layui-col-md8" >
+								<div class="layui-progress layui-progress-big " >20分&nbsp;&nbsp;
+									<div class="layui-progress-bar layui-bg-red" lay-percent="50%" >2例&nbsp;&nbsp;</div>
+								</div>
+							</div>
+							
+						</div>
+						<div class="layui-row pt5 pb5"  >
+							<div class="layui-col-md4" >退款金额：</div>
+							<div class="layui-col-md8" >
+								<div class="layui-progress layui-progress-big " >20分&nbsp;&nbsp;
+									<div class="layui-progress-bar layui-bg-red" lay-percent="75%" >5万&nbsp;&nbsp;</div>
+								</div>
+							</div>
+						</div>
+						<div class="layui-row pt5 pb5"  >
+							<div class="layui-col-md4" >T&nbsp;&nbsp;+&nbsp;&nbsp;90：</div>
+							<div class="layui-col-md8" >
+								<div class="layui-progress layui-progress-big " >30分&nbsp;&nbsp;
+									<div class="layui-progress-bar layui-bg-red" lay-percent="100%" >&gt;=90%&nbsp;&nbsp;</div>
+								</div>
+							</div>
+						</div>
+					</div>	
+				</div>
+			</div>
+			</div>
+		</div>
+		<!-- E=KPI结束 -->
+		<!-- S=风险数据开始 -->
+		<div class="layui-row layui-col-space10 mt5">
+			<div class="layui-col-md6" >
+				<div class="thisDanger">
+					<h3>风险指标</h3>
+					<div class="dangerImg" style=""><img src="./images/dangerImg.png" ></div>
+					<div class="layui-row smBox"  >
+						<span>
+						<a href="#" id="tAdd90" class="smNav">T+90</a>
+						<a href="#" id="GMV" class="smNav">GMV</a>
+						<a href="#" id="serveNum" class="smNav">服务分</a>
+						<a href="#" id="Types" class="smNav">类别指标</a>
+						</span>
+					</div>
+					<div class="layui-row" id="thisGMV" >
+						<div id="dangerPic" class="thisDanger_in"></div>
+						<h4 class="txtcenter">xx月GMV风险店铺</h4>
+							<table class="layui-table" lay-skin="line" lay-size="sm">
+								<thead>
+									<tr>
+										<th>店铺ID</th>
+										<th>行业</th>
+										<th>90天GMV总增量</th>
+										<th>当前30天GMV</th>
+										<th>团队</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>cn1520477988fvuc</td>
+										<td>俄罗斯当地图书销售</td>
+										<td>1000</td>
+										<td>1000</td>
+										<td>全真教</td>
+									</tr>
+									<tr>
+										<td>cn1520477988fvuc</td>
+										<td>俄罗斯当地图书销售</td>
+										<td>1000</td>
+										<td>1000</td>
+										<td>全真教</td>
+									</tr>
+									<tr>
+										<td>cn1520477988fvuc</td>
+										<td>俄罗斯当地图书销售</td>
+										<td>1000</td>
+										<td>1000</td>
+										<td>全真教</td>
+									</tr>
+									<tr>
+										<td>cn1520477988fvuc</td>
+										<td>俄罗斯当地图书销售</td>
+										<td>1000</td>
+										<td>1000</td>
+										<td>全真教</td>
+									</tr>
+									<tr>
+										<td>cn1520477988fvuc</td>
+										<td>俄罗斯当地图书销售</td>
+										<td>1000</td>
+										<td>1000</td>
+										<td>全真教</td>
+									</tr>
+									<tr>
+										<td>cn1520477988fvuc</td>
+										<td>俄罗斯当地图书销售</td>
+										<td>1000</td>
+										<td>1000</td>
+										<td>全真教</td>
+									</tr>
+								</tbody>
+							</table>
+					</div>
+					<div class="layui-row" id="thisServeNum" style="display: none;">
+						<table class="layui-table" lay-skin="line" lay-size="sm">
+								<thead>
+									<tr>
+										<th>店铺ID</th>
+										<th>行业</th>
+										<th>合作月份</th>
+										<th>服务分</th>
+										<th>团队</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>cn1520477988fvuc</td>
+										<td>俄罗斯当地图书销售</td>
+										<td>10月</td>
+										<td>10</td>
+										<td>全真教</td>
+									</tr>
+									<tr>
+										<td>cn1520477988fvuc</td>
+										<td>俄罗斯当地图书销售</td>
+										<td>10月</td>
+										<td>10</td>
+										<td>全真教</td>
+									</tr>
+									<tr>
+										<td>cn1520477988fvuc</td>
+										<td>俄罗斯当地图书销售</td>
+										<td>10月</td>
+										<td>10</td>
+										<td>全真教</td>
+									</tr>
+									<tr>
+										<td>cn1520477988fvuc</td>
+										<td>俄罗斯当地图书销售</td>
+										<td>10月</td>
+										<td>10</td>
+										<td>全真教</td>
+									</tr>
+									<tr>
+										<td>cn1520477988fvuc</td>
+										<td>俄罗斯当地图书销售</td>
+										<td>10月</td>
+										<td>10</td>
+										<td>全真教</td>
+									</tr>
+									<tr>
+										<td>cn1520477988fvuc</td>
+										<td>俄罗斯当地图书销售</td>
+										<td>10月</td>
+										<td>10</td>
+										<td>全真教</td>
+									</tr>
+								</tbody>
+						</table>
+					</div>
+					<div class="layui-row" id="thisTAdd90" style="display: none;">
+						<table class="layui-table" lay-skin="line" lay-size="sm">
+								<thead>
+									<tr>
+										<th>店铺ID</th>
+										<th>行业</th>
+										<th>合作月份</th>
+										<th>上新数量</th>
+										<th>团队</th>
+										<th>负责人</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>cn1520477988fvuc</td>
+										<td>俄罗斯当地图书销售</td>
+										<td>10月</td>
+										<td>100</td>
+										<td>全真教</td>
+										<td>某某某</td>
+									</tr>
+									<tr>
+										<td>cn1520477988fvuc</td>
+										<td>俄罗斯当地图书销售</td>
+										<td>10月</td>
+										<td>100</td>
+										<td>全真教</td>
+										<td>某某某</td>
+									</tr>
+									<tr>
+										<td>cn1520477988fvuc</td>
+										<td>俄罗斯当地图书销售</td>
+										<td>10月</td>
+										<td>100</td>
+										<td>全真教</td>
+										<td>某某某</td>
+									</tr>
+									<tr>
+										<td>cn1520477988fvuc</td>
+										<td>俄罗斯当地图书销售</td>
+										<td>10月</td>
+										<td>100</td>
+										<td>全真教</td>
+										<td>某某某</td>
+									</tr>
+									<tr>
+										<td>cn1520477988fvuc</td>
+										<td>俄罗斯当地图书销售</td>
+										<td>10月</td>
+										<td>100</td>
+										<td>全真教</td>
+										<td>某某某</td>
+									</tr>
+									<tr>
+										<td>cn1520477988fvuc</td>
+										<td>俄罗斯当地图书销售</td>
+										<td>10月</td>
+										<td>100</td>
+										<td>全真教</td>
+										<td>某某某</td>
+									</tr>
+								</tbody>
+						</table>
+					</div>
+					<div class="layui-row" id="thisTypes" style="display: none;">
+						<table class="layui-table" lay-skin="line" lay-size="sm">
+								<thead>
+									<tr>
+										<th>店铺ID</th>
+										<th>行业</th>
+										<th>合作月份</th>
+										<th class="curs" onclick="openIn();">未达标类目</th>
+										<th>团队</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>cn1520477988fvuc</td>
+										<td>俄罗斯当地图书销售</td>
+										<td>10月</td>
+										<td>3个</td>
+										<td>全真教</td>
+									</tr>
+									<tr>
+										<td>cn1520477988fvuc</td>
+										<td>俄罗斯当地图书销售</td>
+										<td>10月</td>
+										<td>3个</td>
+										<td>全真教</td>
+									</tr>
+									<tr>
+										<td>cn1520477988fvuc</td>
+										<td>俄罗斯当地图书销售</td>
+										<td>10月</td>
+										<td>3个</td>
+										<td>全真教</td>
+									</tr>
+									<tr>
+										<td>cn1520477988fvuc</td>
+										<td>俄罗斯当地图书销售</td>
+										<td>10月</td>
+										<td>3个</td>
+										<td>全真教</td>
+									</tr>
+									<tr>
+										<td>cn1520477988fvuc</td>
+										<td>俄罗斯当地图书销售</td>
+										<td>10月</td>
+										<td>3个</td>
+										<td>全真教</td>
+									</tr>
+									<tr>
+										<td>cn1520477988fvuc</td>
+										<td>俄罗斯当地图书销售</td>
+										<td>10月</td>
+										<td>3个</td>
+										<td>全真教</td>
+									</tr>
+								</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="layui-col-md6" >
+				<div class="hasDanger">
+				<h3>服务监控</h3>
+				<div class="layui-row crmTreamBox" >
+					<div class="layui-col-md3" onclick="crmOpenIn();"><h3 class="crmTream">南江盟</h3><div id="pic1" class="thisPie"></div></div>
+					<div class="layui-col-md3" onclick="crmOpenIn();"><h3 class="crmTream">全真教</h3><div id="pic2" class="thisPie"></div></div>
+					<div class="layui-col-md3" onclick="crmOpenIn();"><h3 class="crmTream">星辰派</h3><div id="pic3" class="thisPie"></div></div>
+					<div class="layui-col-md3" onclick="crmOpenIn();"><h3 class="crmTream">问天楼</h3><div id="pic4" class="thisPie"></div></div>
+				</div>
+				</div>
+			</div>
+		</div>
+		<!-- E=风险数据结束 -->
+		<!-- S=运营数据开始 -->
+		<div class="layui-row layui-col-space10">
+			<div class="layui-col-md6" >
+				<div class="dataAll" id="allHeight">
+					<h3>交易运营数据</h3>
+					<div class="layui-row lineh50" >
+						<span>
+							<a href=""  class="smNav">今日</a>
+							<a href="" class="smNav">昨日</a>
+							<input type="text" class="layui-input" id="test1" placeholder="选择年月">
+						</span>
+					</div>
+					<div class="layui-row">
+						<div id="allData"  class="dataAllTit" ></div>
+					</div>
+					<div class="layui-row dataTile"  >
+						
+						<div class="layui-col-md4"><div class="theAllDa theAllDaFir" ><a href="" style="">GMV:XXX</a></div></div>
+						<div class="layui-col-md4"><div class="theAllDa theAllDaSec" ><a href="" >UV:XXX</a></div></div>
+						<div class="layui-col-md4"><div class="theAllDa theAllDaThr" ><a href="" >订单总数:XXX</a></div></div>
+					</div>
+					<div class="layui-row" id="theData">
+						<table class="layui-table" lay-skin="line" lay-size="sm">
+							<thead>
+								<tr>
+								<th>排序</th>
+								<th>店铺ID</th>
+								<th>行业</th>
+								<th>到期</th>
+								<th>UV</th>
+								<th>订单数</th>
+								<th>GMV</th>
+								<th>GMV环比</th>
+								<th>团队</th>
+							</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class=" medalFirst" ><div >1</div></td>
+									<td>cn1520477988fvuc</td>
+									<td>俄罗斯当地图书销售</td>
+									<td>1月</td>
+									<td>1000</td>
+									<td>1000</td>
+									<td>1000</td>
+									<td>10.5%</td>
+									<td>全真教</td>
+								</tr>
+								<tr>
+									<td  class=" medalSecond">top2</td>
+									<td>cn1520477988fvuc</td>
+									<td>俄罗斯当地图书销售</td>
+									<td>1月</td>
+									<td>1000</td>
+									<td>1000</td>
+									<td>1000</td>
+									<td>10.5%</td>
+									<td>全真教</td>
+								</tr>
+								<tr>
+									<td class="medalThird">top3</td>
+									<td>cn1520477988fvuc</td>
+									<td>俄罗斯当地图书销售</td>
+									<td>1月</td>
+									<td>1000</td>
+									<td>1000</td>
+									<td>1000</td>
+									<td>10.5%</td>
+									<td>全真教</td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td>cn1520477988fvuc</td>
+									<td>俄罗斯当地图书销售</td>
+									<td>1月</td>
+									<td>1000</td>
+									<td>1000</td>
+									<td>1000</td>
+									<td>10.5%</td>
+									<td>全真教</td>
+								</tr>
+								<tr>
+									<td>5</td>
+									<td>cn1520477988fvuc</td>
+									<td>俄罗斯当地图书销售</td>
+									<td>1月</td>
+									<td>1000</td>
+									<td>1000</td>
+									<td>1000</td>
+									<td>10.5%</td>
+									<td>全真教</td>
+								</tr>
+								<tr>
+									<td>6</td>
+									<td>cn1520477988fvuc</td>
+									<td>俄罗斯当地图书销售</td>
+									<td>1月</td>
+									<td>1000</td>
+									<td>1000</td>
+									<td>1000</td>
+									<td>10.5%</td>
+									<td>全真教</td>
+								</tr>
+								<tr>
+									<td>7</td>
+									<td>cn1520477988fvuc</td>
+									<td>俄罗斯当地图书销售</td>
+									<td>1月</td>
+									<td>1000</td>
+									<td>1000</td>
+									<td>1000</td>
+									<td>10.5%</td>
+									<td>全真教</td>
+								</tr>
+								<tr>
+									<td>8</td>
+									<td>cn1520477988fvuc</td>
+									<td>俄罗斯当地图书销售</td>
+									<td>1月</td>
+									<td>1000</td>
+									<td>1000</td>
+									<td>1000</td>
+									<td>10.5%</td>
+									<td>全真教</td>
+								</tr>
+								<tr>
+									<td>9</td>
+									<td>cn1520477988fvuc</td>
+									<td>俄罗斯当地图书销售</td>
+									<td>1月</td>
+									<td>1000</td>
+									<td>1000</td>
+									<td>1000</td>
+									<td>10.5%</td>
+									<td>全真教</td>
+								</tr>
+								<tr>
+									<td>10</td>
+									<td>cn1520477988fvuc</td>
+									<td>俄罗斯当地图书销售</td>
+									<td>1月</td>
+									<td>1000</td>
+									<td>1000</td>
+									<td>1000</td>
+									<td>10.5%</td>
+									<td>全真教</td>
+								</tr>
+								<tr>
+									<td>11</td>
+									<td>cn1520477988fvuc</td>
+									<td>俄罗斯当地图书销售</td>
+									<td>1月</td>
+									<td>1000</td>
+									<td>1000</td>
+									<td>1000</td>
+									<td>10.5%</td>
+									<td>全真教</td>
+								</tr>
+								<tr>
+									<td>12</td>
+									<td>cn1520477988fvuc</td>
+									<td>俄罗斯当地图书销售</td>
+									<td>1月</td>
+									<td>1000</td>
+									<td>1000</td>
+									<td>1000</td>
+									<td>10.5%</td>
+									<td>全真教</td>
+								</tr>
+								<tr>
+									<td>13</td>
+									<td>cn1520477988fvuc</td>
+									<td>俄罗斯当地图书销售</td>
+									<td>1月</td>
+									<td>1000</td>
+									<td>1000</td>
+									<td>1000</td>
+									<td>10.5%</td>
+									<td>全真教</td>
+								</tr>
+								<tr>
+									<td>14</td>
+									<td>cn1520477988fvuc</td>
+									<td>俄罗斯当地图书销售</td>
+									<td>1月</td>
+									<td>1000</td>
+									<td>1000</td>
+									<td>1000</td>
+									<td>10.5%</td>
+									<td>全真教</td>
+								</tr>
+								<tr>
+									<td>15</td>
+									<td>cn1520477988fvuc</td>
+									<td>俄罗斯当地图书销售</td>
+									<td>1月</td>
+									<td>1000</td>
+									<td>1000</td>
+									<td>1000</td>
+									<td>10.5%</td>
+									<td>全真教</td>
+								</tr>
+								<tr>
+									<td>16</td>
+									<td>cn1520477988fvuc</td>
+									<td>俄罗斯当地图书销售</td>
+									<td>1月</td>
+									<td>1000</td>
+									<td>1000</td>
+									<td>1000</td>
+									<td>10.5%</td>
+									<td>全真教</td>
+								</tr>
+								<tr>
+									<td>17</td>
+									<td>cn1520477988fvuc</td>
+									<td>俄罗斯当地图书销售</td>
+									<td>1月</td>
+									<td>1000</td>
+									<td>1000</td>
+									<td>1000</td>
+									<td>10.5%</td>
+									<td>全真教</td>
+								</tr>
+								<tr>
+									<td>18</td>
+									<td>cn1520477988fvuc</td>
+									<td>俄罗斯当地图书销售</td>
+									<td>1月</td>
+									<td>1000</td>
+									<td>1000</td>
+									<td>1000</td>
+									<td>10.5%</td>
+									<td>全真教</td>
+								</tr>
+								<tr>
+									<td>19</td>
+									<td>cn1520477988fvuc</td>
+									<td>俄罗斯当地图书销售</td>
+									<td>1月</td>
+									<td>1000</td>
+									<td>1000</td>
+									<td>1000</td>
+									<td>10.5%</td>
+									<td>全真教</td>
+								</tr>
+								<tr>
+									<td>20</td>
+									<td>cn1520477988fvuc</td>
+									<td>俄罗斯当地图书销售</td>
+									<td>1月</td>
+									<td>1000</td>
+									<td>1000</td>
+									<td>1000</td>
+									<td>10.5%</td>
+									<td>全真教</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="layui-col-md6" >
+				<div class="dataAll" id="treamHeight">
+					<h3>团队运营数据</h3>
+					<div class="layui-row">
+						<div class="layui-row">
+							<h2 class="dateTream">南江盟</h2>
+							<div class="layui-row"  >
+								<span>
+								  <a href="" class="smNav">今日</a>
+								  <a href="" class="smNav">昨日</a>
+								  <input type="text" class="layui-input" id="test2" placeholder="选择年月" >
+								</span>
+							</div>
+						</div>
+						<div class="layui-row smBox" >
+							<div class="layui-col-md4"><div class="theAllDa theAllDaFir" ><a href="" >GMV:XXX</a></div></div>
+							<div class="layui-col-md4"><div class="theAllDa theAllDaSec" ><a href="" >UV:XXX</a></div></div>
+							<div class="layui-col-md4"><div class="theAllDa theAllDaThr" ><a href="" >订单总数:XXX</a></div></div>
+						</div>
+						<div class="layui-row shopIDW">
+							<table class="layui-table" lay-skin="line" lay-size="sm">
+								<thead>
+									<tr>
+									<th>店铺ID</th>
+									<th>行业</th>
+									<th>到期</th>
+									<th>UV</th>
+									<th>订单总数</th>
+									<th>GMV</th>
+									<th>GMV环比</th>
+									<th>负责人</th>
+								</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>cn1520477988fvuc</td>
+										<td>俄罗斯当地图书销售</td>
+										<td>1月</td>
+										<td>1000</td>
+										<td>1000</td>
+										<td>1000</td>
+										<td>10.5%</td>
+										<td>某某某</td>
+									</tr>
+									<tr>
+										<td>cn1520477988fvuc</td>
+										<td>俄罗斯当地图书销售</td>
+										<td>1月</td>
+										<td>1000</td>
+										<td>1000</td>
+										<td>1000</td>
+										<td>10.5%</td>
+										<td>某某某</td>
+									</tr>
+									<tr>
+										<td>cn1520477988fvuc</td>
+										<td>俄罗斯当地图书销售</td>
+										<td>1月</td>
+										<td>1000</td>
+										<td>1000</td>
+										<td>1000</td>
+										<td>10.5%</td>
+										<td>某某某</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="layui-row">
+						<div class="layui-row">
+							<h2 class="dateTream">全真教</h2>
+							<div class="layui-row"  >
+								<span>
+								  <a href="" class="smNav">今日</a>
+							      <a href="" class="smNav">昨日</a>
+								  <input type="text" class="layui-input" id="test3" placeholder="选择年月" >
+								</span>
+							</div>
+						</div>
+						<div class="layui-row smBox"  >
+							<div class="layui-col-md4"><div class="theAllDa theAllDaFir"><a href="" >GMV:XXX</a></div></div>
+							<div class="layui-col-md4"><div class="theAllDa theAllDaSec" ><a href="" >UV:XXX</a></div></div>
+							<div class="layui-col-md4"><div class="theAllDa theAllDaThr" ><a href="" >订单总数:XXX</a></div></div>
+						</div>
+						<div class="layui-row shopIDW">
+							<table class="layui-table" lay-skin="line" lay-size="sm">
+								<thead>
+									<tr>
+									<th>店铺ID</th>
+									<th>行业</th>
+									<th>到期</th>
+									<th>UV</th>
+									<th>订单总数</th>
+									<th>GMV</th>
+									<th>GMV环比</th>
+									<th>负责人</th>
+								</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>cn1520477988fvuc</td>
+										<td>俄罗斯当地图书销售</td>
+										<td>1月</td>
+										<td>1000</td>
+										<td>1000</td>
+										<td>1000</td>
+										<td>10.5%</td>
+										<td>某某某</td>
+									</tr>
+									<tr>
+										<td>cn1520477988fvuc</td>
+										<td>俄罗斯当地图书销售</td>
+										<td>1月</td>
+										<td>1000</td>
+										<td>1000</td>
+										<td>1000</td>
+										<td>10.5%</td>
+										<td>某某某</td>
+									</tr>
+									<tr>
+										<td>cn1520477988fvuc</td>
+										<td>俄罗斯当地图书销售</td>
+										<td>1月</td>
+										<td>1000</td>
+										<td>1000</td>
+										<td>1000</td>
+										<td>10.5%</td>
+										<td>某某某</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="layui-row">
+						<div class="layui-row">
+							<h2 class="dateTream">星辰派</h2>
+							<div class="layui-row"  >
+								<span>
+								  <a href="" class="smNav">今日</a>
+							      <a href="" class="smNav">昨日</a>
+								  <input type="text" class="layui-input" id="test4" placeholder="选择年月" >
+								</span>
+							</div>
+						</div>
+						<div class="layui-row smBox"  >
+							<div class="layui-col-md4"><div class="theAllDa theAllDaFir" ><a href="" >GMV:XXX</a></div></div>
+							<div class="layui-col-md4"><div class="theAllDa theAllDaSec" ><a href="" >UV:XXX</a></div></div>
+							<div class="layui-col-md4"><div class="theAllDa theAllDaThr" ><a href="" >订单总数:XXX</a></div></div>
+						</div>
+						<div class="layui-row shopIDW">
+							<table class="layui-table" lay-skin="line" lay-size="sm">
+								<thead>
+									<tr>
+									<th>店铺ID</th>
+									<th>行业</th>
+									<th>到期</th>
+									<th>UV</th>
+									<th>订单总数</th>
+									<th>GMV</th>
+									<th>GMV环比</th>
+									<th>负责人</th>
+								</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>cn1520477988fvuc</td>
+										<td>俄罗斯当地图书销售</td>
+										<td>1月</td>
+										<td>1000</td>
+										<td>1000</td>
+										<td>1000</td>
+										<td>10.5%</td>
+										<td>某某某</td>
+									</tr>
+									<tr>
+										<td>cn1520477988fvuc</td>
+										<td>俄罗斯当地图书销售</td>
+										<td>1月</td>
+										<td>1000</td>
+										<td>1000</td>
+										<td>1000</td>
+										<td>10.5%</td>
+										<td>某某某</td>
+									</tr>
+									<tr>
+										<td>cn1520477988fvuc</td>
+										<td>俄罗斯当地图书销售</td>
+										<td>1月</td>
+										<td>1000</td>
+										<td>1000</td>
+										<td>1000</td>
+										<td>10.5%</td>
+										<td>某某某</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="layui-row">
+						<div class="layui-row">
+							<h2 class="dateTream">问天楼</h2>
+							<div class="layui-row"  >
+								<span>
+								  <a href="" class="smNav">今日</a>
+							      <a href="" class="smNav">昨日</a>
+								  <input type="text" class="layui-input" id="test5" placeholder="选择年月" >
+								</span>
+							</div>
+						</div>
+						<div class="layui-row smBox"  >
+							<div class="layui-col-md4"><div class="theAllDa theAllDaFir" ><a href="" >GMV:XXX</a></div></div>
+							<div class="layui-col-md4"><div class="theAllDa theAllDaSec" ><a href="">UV:XXX</a></div></div>
+							<div class="layui-col-md4"><div class="theAllDa theAllDaThr" ><a href="" >订单总数:XXX</a></div></div>
+						</div>
+						<div class="layui-row shopIDW">
+							<table class="layui-table" lay-skin="line" lay-size="sm">
+								<thead>
+									<tr>
+									<th>店铺ID</th>
+									<th>行业</th>
+									<th>到期</th>
+									<th>UV</th>
+									<th>订单总数</th>
+									<th>GMV</th>
+									<th>GMV环比</th>
+									<th>负责人</th>
+								</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>cn1520477988fvuc</td>
+										<td>俄罗斯当地图书销售</td>
+										<td>1月</td>
+										<td>1000</td>
+										<td>1000</td>
+										<td>1000</td>
+										<td>10.5%</td>
+										<td>某某某</td>
+									</tr>
+									<tr>
+										<td>cn1520477988fvuc</td>
+										<td>俄罗斯当地图书销售</td>
+										<td>1月</td>
+										<td>1000</td>
+										<td>1000</td>
+										<td>1000</td>
+										<td>10.5%</td>
+										<td>某某某</td>
+									</tr>
+									<tr>
+										<td>cn1520477988fvuc</td>
+										<td>俄罗斯当地图书销售</td>
+										<td>1月</td>
+										<td>1000</td>
+										<td>1000</td>
+										<td>1000</td>
+										<td>10.5%</td>
+										<td>某某某</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- E=运营数据结束 -->
+		<!-- S=产品数据开始 -->
+		<div class="layui-row goods">
+			<div class="layui-col-md12">
+			<h3>产品运营数据</h3>
+			<div class="layui-row lineh50" >
+				<span>
+					<a href="" class="smNav">今日</a>
+					<a href="" class="smNav">昨日</a>
+					<input type="text" class="layui-input" id="test6" placeholder="选择年月" >
+				</span>
+			</div>
+			<div class="layui-row">
+				<div class="layui-col-md6"><div id="goofLine"></div></div>
+				<div class="layui-col-md6">
+					<div class="layui-col-md3 txtCon" >
+					
+					<div class="goodsTeam" onclick="openIn1();">
+						<img src="./images/南江盟.jpg" alt="南江盟" style="opacity: 0.8">
+						<!-- <div class="mk">50</div> -->
+					</div>
+					<h3>上新数：50</h3>
+				</div>
+				<div class="layui-col-md3 txtCon" >
+					
+					<div class="goodsTeam" onclick="openIn1();">
+						<img src="./images/全镇教.jpg" alt="全镇教" style="opacity: 0.8">
+						<!-- <div class="mk">50</div> -->
+					</div>
+					<h3>上新数：50</h3>
+				</div>
+				<div class="layui-col-md3 txtCon" >
+					
+					<div class="goodsTeam" onclick="openIn1();">
+						<img src="./images/星辰派.jpg" alt="星辰派" style="opacity: 0.8">
+<!-- 						<div class="mk">50</div> -->
+					</div>
+					<h3>上新数：50</h3>
+				</div>
+				<div class="layui-col-md3 txtCon" >
+					<div class="goodsTeam" onclick="openIn1();">
+						<img src="./images/问天楼.jpg" alt="问天楼" style="opacity: 0.8">
+						<!-- <div class="mk">50</div> -->
+					</div>
+					<h3>上新数：50</h3>
+				</div>
+				</div>
+			</div>
+			</div>
+		</div>
+		<!-- E=产品数据结束 -->
+		<!-- S=月份维度开始 -->
+		<div class="layui-row thisMon" >
+			<div class="layui-col-md12">
+			<h3>月份统计</h3>
+			<div class="layui-row">
+				<div id="mon" class="thisMon_inT"></div>
+			</div>
+			<div class="layui-row">
+				<div class="layui-col-md3 goTream" ><a href="./indexChild.html"><img src="./images/yun.png" ><span >前往南江盟</span></a></div>
+				<div class="layui-col-md3 goTream" ><a href="./indexChild.html" ><img src="./images/yun.png" ><span >前往全真教</span></a></div>
+				<div class="layui-col-md3 goTream" ><a href="./indexChild.html" ><img src="./images/yun.png" ><span >前往星辰派</span></a></div>
+				<div class="layui-col-md3 goTream" ><a href="./indexChild.html" ><img src="./images/yun.png" ><span>前往问天楼</span></a></div>
+			</div>
+			</div>
+		</div>
+		<!-- E=月份维度结束 -->
+	</div> 
+	<!-- E=主体内容 -->
+	<div id="mask" class="mask"></div>
+	<!-- S=CRM浮窗内容 -->
+	<div id="CRMOpen" class="loadPage">
+		<table class="layui-table" lay-skin="line"  >
+			<thead>
+				<tr>
+				<th>店铺ID</th>
+				<th>负责人</th>
+			</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>cn1520477988fvuc</td>
+					<td>某某某</td>
+				</tr>
+				<tr>
+					<td>cn1520477988fvuc</td>
+					<td>某某某</td>
+				</tr>
+				<tr>
+					<td>cn1520477988fvuc</td>
+					<td>某某某</td>
+				</tr>
+				<tr>
+					<td>cn1520477988fvuc</td>
+					<td>某某某</td>
+				</tr>
+				<tr>
+					<td>cn1520477988fvuc</td>
+					<td>某某某</td>
+				</tr>
+				<tr>
+					<td>cn1520477988fvuc</td>
+					<td>某某某</td>
+				</tr>
+				<tr>
+					<td>cn1520477988fvuc</td>
+					<td>某某某</td>
+				</tr>
+				<tr>
+					<td>cn1520477988fvuc</td>
+					<td>某某某</td>
+				</tr>
+				<tr>
+					<td>cn1520477988fvuc</td>
+					<td>某某某</td>
+				</tr>
+				<tr>
+					<td>cn1520477988fvuc</td>
+					<td>某某某</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<!-- E=CRM浮窗内容 -->
+	<!-- E=类目内容 -->
+	<div id="loadPage" class="loadPage">
+		<table class="layui-table"  >
+			<thead>
+				<tr>
+				<th>店铺ID</th>
+				<th>类目</th>
+				<th>DSR商品描述</th>
+				<th>货不对板纠纷率</th>
+			</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td rowspan="2">cn1520477988fvuc</td>
+					<td>俄罗斯当地图书销售</td>
+					<td>5</td>
+					<td>10%</td>
+				</tr>
+				<tr>
+					<td>俄罗斯当地图书销售</td>
+					<td>5</td>
+					<td>10%</td>
+				</tr>
+				<tr>
+					<td rowspan="3">cn15204779</td>
+					<td>俄罗斯当地图书销售</td>
+					<td>5</td>
+					<td>10%</td>
+				</tr>
+				<tr>
+					<td>俄罗斯当地图书销售</td>
+					<td>5</td>
+					<td>10%</td>
+				</tr>
+				<tr>
+					<td>俄罗斯当地图书销售</td>
+					<td>5</td>
+					<td>10%</td>
+				</tr>
+				<tr>
+					<td>04779</td>
+					<td>俄罗斯当地图书销售</td>
+					<td>5</td>
+					<td>10%</td>
+				</tr>
+				<tr>
+					<td rowspan="2">cn65204779</td>
+					<td>俄罗斯当地图书销售</td>
+					<td>5</td>
+					<td>10%</td>
+				</tr>
+				<tr>
+					<td>俄罗斯当地图书销售</td>
+					<td>5</td>
+					<td>10%</td>
+				</tr>
+				<tr>
+					<td>cn65204779</td>
+					<td>俄罗斯当地图书销售</td>
+					<td>5</td>
+					<td>10%</td>
+				</tr>
+				<tr>
+					<td>779</td>
+					<td>俄罗斯当地图书销售</td>
+					<td>5</td>
+					<td>10%</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<!-- E=类目内容 -->
+	<!-- S=产品数据浮窗内容 -->
+	<div id="goodPage" class="loadPage">
+		<table class="layui-table" lay-skin="line" style="" >
+			<thead>
+				<tr>
+				<th>店铺ID</th>
+				<th>行业</th>
+				<th>合作月份</th>
+				<th>上新数量</th>
+				<th>负责人</th>
+			</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>cn1520477988fvuc</td>
+					<td>俄罗斯当地图书销售</td>
+					<td>1月</td>
+					<td class="curs" onclick="numOpenIn();" class="pointer">100</td>
+					<td>某某某</td>
+				</tr>
+				<tr>
+					<td>cn1520477988fvuc</td>
+					<td>俄罗斯当地图书销售</td>
+					<td>1月</td>
+					<td class="curs" onclick="numOpenIn();" class="pointer">100</td>
+					<td>某某某</td>
+				</tr>
+				<tr>
+					<td>cn1520477988fvuc</td>
+					<td>俄罗斯当地图书销售</td>
+					<td>1月</td>
+					<td class="curs" onclick="numOpenIn();" class="pointer">100</td>
+					<td>某某某</td>
+				</tr>
+				<tr>
+					<td>cn1520477988fvuc</td>
+					<td>俄罗斯当地图书销售</td>
+					<td>1月</td>
+					<td class="curs" onclick="numOpenIn();" class="pointer">1</td>
+					<td>某某某</td>
+				</tr>
+				<tr>
+					<td>cn1520477988fvuc</td>
+					<td>俄罗斯当地图书销售</td>
+					<td>1月</td>
+					<td class="curs" onclick="numOpenIn();" class="pointer">7</td>
+					<td>某某某</td>
+				</tr>
+				<tr>
+					<td>cn1520477988fvuc</td>
+					<td>俄罗斯当地图书销售</td>
+					<td>1月</td>
+					<td class="curs" onclick="numOpenIn();" class="pointer">1</td>
+					<td>某某某</td>
+				</tr>
+				<tr>
+					<td>cn1520477988fvuc</td>
+					<td>俄罗斯当地图书销售</td>
+					<td>1月</td>
+					<td class="curs" onclick="numOpenIn();" class="pointer">1</td>
+					<td>某某某</td>
+				</tr>
+				<tr>
+					<td>cn1520477988fvuc</td>
+					<td>俄罗斯当地图书销售</td>
+					<td>1月</td>
+					<td class="curs" onclick="numOpenIn();" class="pointer">100</td>
+					<td>某某某</td>
+				</tr>
+				<tr>
+					<td>cn1520477988fvuc</td>
+					<td>俄罗斯当地图书销售</td>
+					<td>1月</td>
+					<td class="curs" onclick="numOpenIn();" class="pointer">10</td>
+					<td>某某某</td>
+				</tr>
+				<tr>
+					<td>cn1520477988fvuc</td>
+					<td>俄罗斯当地图书销售</td>
+					<td>1月</td>
+					<td class="curs" onclick="numOpenIn();" class="pointer">100</td>
+					<td>某某某</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<!-- E=产品数据浮窗内容 -->
+	<!-- S=月份维度浮窗内容 -->
+	<div id="monOpen" class="loadPage">
+		<h3 class="monTitle">XX月产品信息</h3>
+		<table class="layui-table" lay-skin="line"  >
+			<thead>
+				<tr>
+				<th>店铺ID</th>
+				<th class="curs">完成率</th>
+				<th>所属团队</th>
+				<th>负责人</th>
+			</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>cn1520477988fvuc</td>
+					<td>100%</td>
+					<td>全真教</td>
+					<td>某某某</td>
+				</tr>
+				<tr>
+					<td>cn1520477988fvuc</td>
+					<td>100%</td>
+					<td>全真教</td>
+					<td>某某某</td>
+				</tr>
+				<tr>
+					<td>cn1520477988fvuc</td>
+					<td>100%</td>
+					<td>全真教</td>
+					<td>某某某</td>
+				</tr>
+				<tr>
+					<td>cn1520477988fvuc</td>
+					<td>100%</td>
+					<td>全真教</td>
+					<td>某某某</td>
+				</tr>
+				<tr>
+					<td>cn1520477988fvuc</td>
+					<td>100%</td>
+					<td>全真教</td>
+					<td>某某某</td>
+				</tr>
+				<tr>
+					<td>cn1520477988fvuc</td>
+					<td>100%</td>
+					<td>全真教</td>
+					<td>某某某</td>
+				</tr>
+				<tr>
+					<td>cn1520477988fvuc</td>
+					<td>100%</td>
+					<td>全真教</td>
+					<td>某某某</td>
+				</tr>
+				<tr>
+					<td>cn1520477988fvuc</td>
+					<td>100%</td>
+					<td>全真教</td>
+					<td>某某某</td>
+				</tr>
+				<tr>
+					<td>cn1520477988fvuc</td>
+					<td>100%</td>
+					<td>全真教</td>
+					<td>某某某</td>
+				</tr>
+				<tr>
+					<td>cn1520477988fvuc</td>
+					<td>100%</td>
+					<td>全真教</td>
+					<td>某某某</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<!-- E=月份维度浮窗内容 -->
+	<div id="mask_in" class="mask"></div>
+	<!-- S=产品ID浮窗内容 -->
+	<div id="numOpen" class="loadPage">
+		<table class="layui-table" lay-skin="line" >
+			<thead>
+				<tr>
+				<th>产品ID</th>
+			</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+				</tr>
+				<tr>
+					<td>1</td>
+				</tr>
+				<tr>
+					<td>1</td>
+				</tr>
+				<tr>
+					<td>1</td>
+				</tr>
+				<tr>
+					<td>1</td>
+				</tr>
+				<tr>
+					<td>1</td>
+				</tr>
+				<tr>
+					<td>1</td>
+				</tr>
+				<tr>
+					<td>1</td>
+				</tr>
+				<tr>
+					<td>1</td>
+				</tr>
+				<tr>
+					<td>1</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<!-- E=产品ID浮窗内容 -->
+	<!-- E=浮窗内容 -->
+<!-- 引入layui文件 -->
+<script src="./layui.js"></script>
+<!-- 引入echarts文件 -->
+<script src="./js/echarts.js"></script>
+<script src="./js/index.js"></script>
+</body>
+</html>

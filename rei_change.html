@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>退款信息修改</title>
+  <link rel="stylesheet" href="css/layui.css">
+  <link rel="stylesheet" href="css/index.css">
+  <style type="text/css">
+  	.layui-form-item {
+	    margin-bottom: 25px;
+	}
+  </style>
+</head>
+<body >
+	<div class="layui-container" style="background: #fefefe;min-height: 980px;">
+		<div class="layui-row"><h1 style="line-height:3;">退款信息修改</h1></div>
+		<div class="layui-row" style="width: 60%;" >
+			<form class="layui-form" action="">
+			  <div class="layui-form-item" style="margin-top: 15px;">
+			    <label class="layui-form-label">店铺ID</label>
+			    <div class="layui-input-block">
+			      <input type="text" name="cnid" required  lay-verify="required" placeholder="请输入店铺ID" autocomplete="off" class="layui-input">
+			    </div>
+			  </div>
+			  <div class="layui-form-item">
+			    <label class="layui-form-label">公司名称</label>
+			    <div class="layui-input-block">
+			      <input type="text" name="com_name" autocomplete="off" class="layui-input" disabled="disabled">
+			    </div>
+			  </div>
+			  <div class="layui-form-item">
+			    <label class="layui-form-label">退款类型</label>
+			    <div class="layui-input-block">
+			      <select name="result" lay-verify="required">
+			        <option value=""></option>
+			        <option value="服务纠纷">服务纠纷</option>
+			        <option value="效果纠纷">效果纠纷</option>
+			        <option value="第三方因素">第三方因素</option>
+			        <option value="其他">其他</option>
+			      </select>
+			    </div>
+			  </div>
+			  <div class="layui-form-item">
+			    <div class="layui-input-block">
+			      <input type="text" name="remark" placeholder="备注" autocomplete="off" class="layui-input">
+			    </div>
+			  </div>
+			  <div class="layui-form-item">
+			    <label class="layui-form-label">退款金额</label>
+			    <div class="layui-input-block">
+			      <input type="text" name="money" required  lay-verify="required" placeholder="请输入退款金额" autocomplete="off" class="layui-input">
+			    </div>
+			  </div>
+			  <div class="layui-form-item">
+			    <label class="layui-form-label">退款状态</label>
+			    <div class="layui-input-block">
+			      <select name="status" lay-verify="required">
+			        <option value=""></option>
+			        <option value="处理中">处理中</option>
+			        <option value="处理完成">处理完成</option>
+			        <option value="取消">取消</option>
+			      </select>
+			    </div>
+			  </div>
+			  <div class="layui-form-item">
+			    <label class="layui-form-label">所属团队</label>
+			    <div class="layui-input-block">
+			      <select name="team" lay-verify="required">
+			        <option value=""></option>
+			        <option value="南江盟">南江盟</option>
+			        <option value="星辰派">星辰派</option>
+			        <option value="全真教">全真教</option>
+			        <option value="问天楼">问天楼</option>
+			      </select>
+			    </div>
+			  </div>
+			  <div class="layui-form-item">
+			    <label class="layui-form-label">销售人员</label>
+			    <div class="layui-input-block">
+			      <input type="text" name="sale" required  lay-verify="required" placeholder="请输入销售人员" autocomplete="off" class="layui-input">
+			    </div>
+			  </div>
+			  <div class="layui-form-item" style="margin-top: 50px;">
+			    <div class="layui-input-block">
+			      <input type="submit" class="layui-btn" lay-filter="formDemo" value="立即提交">
+			      <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+			    </div>
+			  </div>
+			</form>
+			
+		</div>
+	</div>
+
+</body>
+<script src="./js/jquery-1.7.2.js"></script>
+<script src="./layui.js"></script>
+<script>
+//Demo
+layui.use('form', function(){
+  var form = layui.form;
+  
+  //监听提交
+  form.on('submit(formDemo)', function(data){
+    layer.msg(JSON.stringify(data.field));
+    return false;
+  });
+});
+</script>
+</html>

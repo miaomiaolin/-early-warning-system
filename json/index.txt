@@ -1,0 +1,1 @@
+{"list":[{"department":"和平区","num":480},{"department":"南开区","num":300}]}

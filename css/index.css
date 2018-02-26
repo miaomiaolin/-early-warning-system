@@ -1,0 +1,358 @@
+body{
+	background-color: #f2f2f2;
+}
+th{
+	white-space:nowrap;
+}
+td{
+	text-align: center;
+}
+.layui-table th {
+    text-align: center;
+}
+.inChild{
+	min-width: 620px;
+}
+/*公共样式*/
+.p10{
+	padding: 10px;
+}
+.pt5{
+	padding-top: 5px;
+}
+.pt15{
+	padding-top: 15px;
+}
+.pb5{
+	padding-bottom: 5px;
+}
+.mt5{
+	margin-top: 5px;
+}
+.lineh50{
+	line-height:50px
+}
+.lineh30{
+	line-height:30px
+}
+.curs{
+	cursor: pointer;
+}
+#theData .medalFirst{
+	background: url(../images/first.png) center center no-repeat;
+	background-size:20px 25px;
+	color: transparent;
+}
+#theData .medalSecond{
+	background: url(../images/second.png) center center no-repeat;
+	background-size:20px 25px;
+	color: transparent;
+}
+#theData .medalThird{
+	background: url(../images/third.png) center center no-repeat;
+	background-size:20px 25px;
+	color: transparent;
+}
+
+/*私有样式*/
+.layuiHead{
+	height: 80px;
+	padding: 10px;
+}
+.layuiHead_in{
+	text-align: center;
+	line-height: 80px;
+}
+.thisKPI{
+	background: #fff;
+	margin-top: 10px;
+	padding: 10px;
+}
+html .layui-progress{
+	text-align: right;
+	font-size: 10px;
+}
+/*风险指标*/
+.dgbox{
+	margin: 10px 0
+}
+.dgbox_in{
+	background: #fff;
+	padding: 20px 10px;
+}
+.dgTit{
+	line-height: 30px;
+	text-align: center;
+	font-size: 18px;
+}
+.dangerImg{
+	position: absolute;
+	right: 15px;
+	width: 70px;
+	height:70px;
+	top: 0px
+}
+.dangerImg img{
+	width: 100%;
+	height: 100%;
+}
+.thisDanger{
+	background: #fff;
+	padding: 10px;
+	height:300px;
+	overflow:auto;
+	position: relative;
+}
+.thisDanger_in{
+	width: 90%;
+	height: 270px;
+	margin: 0 auto;
+}
+.hasDanger{
+	background: #fff;
+	padding: 10px 10px 55px 10px;
+	box-sizing: content-box;
+}
+.thisPie{
+	width:100%; 
+	height:150px;
+	margin: 0 auto;
+	box-sizing: content-box;
+}
+.layuiOpen{
+	width: 80%;
+}
+.smBox{
+	margin:10px 0
+}
+.smNav{
+	border: 1px solid #d9d9d9;
+	border-radius: 4px;
+	padding: 5px 8px;
+	color: #a075a0
+}
+.crmTreamBox{
+	padding: 30px 0
+}
+.crmTream{
+	text-align: center;
+}
+/*运营数据*/
+#thisCRM th,#thisCRM td{
+	text-align: left;
+}
+.dataTile{
+	margin-bottom: 20px;
+}
+.shopIDW  td:first-child{
+	word-break:break-all
+}
+.dataAll  td:nth-child(2){
+	word-break:break-all
+}
+.dataAll{
+	background: #fff;
+	padding: 10px;
+	box-sizing: border-box;
+}
+.dataAllTit{
+	width: 98%;
+	height: 350px;
+	margin: 0 auto
+}
+.dataAll input{
+	display: inline-block; 
+	width: 20%;
+	height: 30px;
+}
+.theAllDa{
+	width: 90%;
+	line-height: 50px;
+	text-align: center;
+	margin: 0 auto;
+}
+.theAllDaFir{
+	background-color:#ffb400;
+}
+.theAllDaSec{
+	background-color: #1abc9c;
+}
+.theAllDaThr{
+	background-color: #22a7f0;
+}
+.theAllDa a
+{
+	color: #fff;
+	font-weight: bold;
+}
+.dataTile .dateTream_in{
+	background-color: #e6e6e6;
+	border-radius: 4px;
+	overflow: hidden;
+	color: #666;
+	line-height: 100px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 22px;
+	margin: 20px;
+	cursor: pointer;
+}
+.dataTile .dateTream_in span{
+	color: #fff;
+	height: 100px;
+
+}
+.dateTream{
+	text-align: center;
+	line-height: 50px
+}
+/*产品数据*/
+.goods{
+	background: #fff;
+	margin-top: 10px;
+	padding: 15px 15px 0px 15px;
+}
+.goods2{
+	padding-bottom: 20px;
+}
+.goods input{
+	display: inline-block;
+	width: 10%;
+	height: 30px;
+}
+
+.goodsTeam{
+	border-radius: 50%;
+	background: #ccc;
+	width: 120px;
+	height: 120px;
+	line-height: 120px;
+	margin:10px auto;
+	cursor: pointer;
+	overflow: hidden;
+	position: relative;
+}
+.goodsTeam img{
+  width: 100%;
+  height: 100%;
+}
+.goodsTeam .mk{
+	width: 100%;
+	height:100%;
+	top:0;
+	position: absolute;
+	background: rgba(0,0,0,0.3);
+	z-index: 2;
+	color: #fff;
+	font-size: 18px;
+}
+#goofLine{
+	width: 100%;
+	height:300px;
+}
+.container{
+	height:400px;
+	margin: 0 auto
+}
+.thisMon{
+	background: #fff;
+	margin-top: 10px;
+	padding: 10px;
+	overflow: auto;
+}
+.thisMon_inT{
+	width: 1100px;
+	height: 300px;
+	margin: 0 auto;
+}
+.layui-row.more{
+	text-align: center;
+	color: #000;
+	font-weight: bold;
+	cursor: pointer;
+}
+.layui-row.more i{
+	font-size: 32px; 
+	color: #888;
+}
+.mask{
+	width: 100%;
+	position: fixed;
+	top: 0;left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0,0,0,0.5);
+	z-index: 2; 
+	display: none;
+}
+.loadPage{
+	width: 50%;
+	position: fixed;
+	z-index: 3;
+	background: #fff;
+	top: 110px;
+	left: 25%;
+	right: 25%;
+	padding-top: 30px;
+	padding-bottom: 50px;
+	border-radius: 10px; 
+	display: none;
+	max-height: 340px;
+	overflow: auto;
+}
+.loadPage table{
+	width:90%;
+	margin:0 auto;
+}
+.loadPage .monTitle{
+	text-align: center;
+	line-height: 50px;
+}
+.txtCon{
+	text-align: center;
+	padding-top: 20px;
+}
+#thisGMV .txtcenter{
+	text-align: center;
+}
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/  
+::-webkit-scrollbar  
+{  
+    width: 16px;  
+    height: 16px;  
+    background-color: #F5F5F5;  
+    opacity: 0.5;
+}  
+  
+/*定义滚动条轨道 内阴影+圆角*/  
+::-webkit-scrollbar-track  
+{  
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);  
+    border-radius: 10px;  
+    background-color: #F5F5F5;  
+}  
+  
+/*定义滑块 内阴影+圆角*/  
+::-webkit-scrollbar-thumb  
+{  
+    border-radius: 10px;  
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);  
+    background-color: #e6e6e6;  
+}  
+#CRMOpen th,#CRMOpen td{
+	text-align: left;
+}
+#numOpen th,#numOpen td{
+	text-align: left;
+}
+.layui-col-md3.goTream{
+	padding: 0 40px;
+}
+.layui-col-md3.goTream a{
+	width: 100%;
+	height: 30px;
+	position: relative;
+}
+.layui-col-md3.goTream a span{
+	position: absolute;top:-5px;left: 67px;
+}

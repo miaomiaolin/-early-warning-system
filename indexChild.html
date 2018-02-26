@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>layout 后台大布局 - Layui</title>
+  <link rel="stylesheet" href="css/layui.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body class="inChild">
+	<!-- S=主体内容 -->
+	<div class="layui-container">
+		<!-- S=头部开始 -->
+		<div class="layuiHead layui-row layui-bg-black" >
+			<div class="layuiHead_in layui-col-md12">
+			<h1>预警系统</h1>
+			</div>
+		</div>
+		<!-- E=头部结束 -->
+		<!-- S=风险数据开始 -->
+		<div class="layui-row dgbox">
+			<div class="layui-col-md12" >
+				<div class="dgbox_in">
+					<h3>团队KPI（90分）</h3>
+					<div class="layui-row layui-col-space30" style="margin: 20px 0;">
+						<div class="layui-col-md3">
+							<div class="layui-row">
+								<div class="layui-col-md4" >GMV总量：</div>
+								<div class="layui-col-md8" >
+									<div class="layui-progress layui-progress-big " >30分&nbsp;&nbsp;
+										<div class="layui-progress-bar layui-bg-red" lay-percent="50%" >10万&nbsp;&nbsp;</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="layui-col-md3">
+							<div class="layui-row">
+								<div class="layui-col-md4" >纠纷数量：</div>
+								<div class="layui-col-md8" >
+									<div class="layui-progress layui-progress-big " >20分&nbsp;&nbsp;
+									<div class="layui-progress-bar layui-bg-red" lay-percent="50%" >2例&nbsp;&nbsp;</div>
+								</div>
+								</div>
+							</div>
+						</div>
+						<div class="layui-col-md3">
+							<div class="layui-row">
+								<div class="layui-col-md4" >退款金额：</div>
+								<div class="layui-col-md8" >
+									<div class="layui-progress layui-progress-big " >20分&nbsp;&nbsp;
+									<div class="layui-progress-bar layui-bg-red" lay-percent="75%" >5万&nbsp;&nbsp;</div>
+								</div>
+								</div>
+							</div>
+						</div>
+						<div class="layui-col-md3">
+							<div class="layui-row">
+								<div class="layui-col-md3" >T&nbsp;&nbsp;+&nbsp;&nbsp;90：</div>
+								<div class="layui-col-md9" >
+									<div class="layui-progress layui-progress-big " >30分&nbsp;&nbsp;
+									<div class="layui-progress-bar layui-bg-red" lay-percent="100%" >&gt;=90%&nbsp;&nbsp;</div>
+								</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<h3>风险指标</h3>
+					<div class="layui-row smBox"  >
+						<span>
+						<a href="#" id="tAdd90" class="smNav">T+90</a>
+						<a href="#" id="GMV" class="smNav">GMV</a>
+						<a href="#" id="serveNum" class="smNav">服务分</a>
+						<a href="#" id="Types" class="smNav">类别指标</a>
+						<a href="#" id="CRM" class="smNav">服务监控</a>
+						</span>
+					</div>
+					<div class="layui-row" id="thisGMV" >
+						<h4 class="dgTit">GMV风险店铺</h4>
+						<table class="layui-table" lay-skin="line" >
+							<thead>
+								<tr>
+									<th>店铺ID</th>
+									<th>行业</th>
+									<th>90天GMV总增量</th>
+									<th>当前30天GMV</th>
+									<th>负责人</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>cn1520477988fvuc</td>
+									<td>俄罗斯当地图书销售</td>
+									<td>1000</td>
+									<td>1000</td>
+									<td>某某某</td>
+								</tr>
+								<tr>
+									<td>cn1520477988fvuc</td>
+									<td>俄罗斯当地图书销售</td>
+									<td>1000</td>
+									<td>1000</td>
+									<td>某某某</td>
+								</tr>
+								<tr>
+									<td>cn1520477988fvuc</td>
+									<td>俄罗斯当地图书销售</td>
+									<td>1000</td>
+									<td>1000</td>
+									<td>某某某</td>
+								</tr>
+								<tr>
+									<td>cn1520477988fvuc</td>
+									<td>俄罗斯当地图书销售</td>
+									<td>1000</td>
+									<td>1000</td>
+									<td>某某某</td>
+								</tr>
+								<tr>
+									<td>cn1520477988fvuc</td>
+									<td>俄罗斯当地图书销售</td>
+									<td>1000</td>
+									<td>1000</td>
+									<td>某某某</td>
+								</tr>
+								<tr>
+									<td>cn1520477988fvuc</td>
+									<td>俄罗斯当地图书销售</td>
+									<td>1000</td>
+									<td>1000</td>
+									<td>某某某</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="layui-row" id="thisServeNum" style="display: none;">
+						<h4 class="dgTit">低服务分店铺</h4>
+						<table class="layui-table" lay-skin="line" >
+							<thead>
+								<tr>
+									<th>店铺ID</th>
+									<th>行业</th>
+									<th>服务分</th>
+									<th>负责人</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>cn1520477988fvuc</td>
+									<td>俄罗斯当地图书销售</td>
+									<td>10</td>
+									<td>某某某</td>
+								</tr>
+								<tr>
+									<td>cn1520477988fvuc</td>
+									<td>俄罗斯当地图书销售</td>
+									<td>10</td>
+									<td>某某某</td>
+								</tr>
+								<tr>
+									<td>cn1520477988fvuc</td>
+									<td>俄罗斯当地图书销售</td>
+									<td>10</td>
+									<td>某某某</td>
+								</tr>
+								<tr>
+									<td>cn1520477988fvuc</td>
+									<td>俄罗斯当地图书销售</td>
+									<td>10</td>
+									<td>某某某</td>
+								</tr>
+								<tr>
+									<td>cn1520477988fvuc</td>
+									<td>俄罗斯当地图书销售</td>
+									<td>10</td>
+									<td>某某某</td>
+								</tr>
+								<tr>
+									<td>cn1520477988fvuc</td>
+									<td>俄罗斯当地图书销售</td>
+									<td>10</td>
+									<td>某某某</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="layui-row" id="thisTAdd90" style="display: none;">
+						<h4 class="dgTit">T+90风险店铺</h4>
+						<table class="layui-table" lay-skin="line">
+							<thead>
+								<tr>
+									<th>店铺ID</th>
+									<th>行业</th>
+									<th>上新数量</th>
+									<th>负责人</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>cn1520477988fvuc</td>
+									<td>俄罗斯当地图书销售</td>
+									<td>100</td>
+									<td>某某某</td>
+								</tr>
+								<tr>
+									<td>cn1520477988fvuc</td>
+									<td>俄罗斯当地图书销售</td>
+									<td>100</td>
+									<td>某某某</td>
+								</tr>
+								<tr>
+									<td>cn1520477988fvuc</td>
+									<td>俄罗斯当地图书销售</td>
+									<td>100</td>
+									<td>某某某</td>
+								</tr>
+								<tr>
+									<td>cn1520477988fvuc</td>
+									<td>俄罗斯当地图书销售</td>
+									<td>100</td>
+									<td>某某某</td>
+								</tr>
+								<tr>
+									<td>cn1520477988fvuc</td>
+									<td>俄罗斯当地图书销售</td>
+									<td>100</td>
+									<td>某某某</td>
+								</tr>
+								<tr>
+									<td>cn1520477988fvuc</td>
+									<td>俄罗斯当地图书销售</td>
+									<td>100</td>
+									<td>某某某</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="layui-row" id="thisTypes" style="display: none;">
+						<h4 class="dgTit">类目风险店铺</h4>
+						<table class="layui-table">
+							<thead>
+								<tr>
+									<th>店铺ID</th>
+									<th>行业</th>
+									<th>类目</th>
+									<th>DSR商品描述</th>
+									<th>货不对板纠纷率</th>
+									<th>负责人</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td rowspan="2">cn1520477988fvuc</td>
+									<td rowspan="2">图书销</td>
+									<td>俄罗斯当地图书销售</td>
+									<td>5</td>
+									<td>10%</td>
+									<td rowspan="2">某某某</td>
+								</tr>
+								<tr>
+									<td>俄罗斯当地图书销售</td>
+									<td>5</td>
+									<td>10%</td>
+								</tr>
+								<tr>
+									<td >cn1520477988fvuc</td>
+									<td >图书销</td>
+									<td>俄罗斯当地图书销售</td>
+									<td>5</td>
+									<td>10%</td>
+									<td >某某某</td>
+								</tr>
+								<tr>
+									<td rowspan="2">cn1520477988fvuc</td>
+									<td rowspan="2">图书销</td>
+									<td>俄罗斯当地图书销售</td>
+									<td>5</td>
+									<td>10%</td>
+									<td rowspan="2">某某某</td>
+								</tr>
+								<tr>
+									<td>俄罗斯当地图书销售</td>
+									<td>5</td>
+									<td>10%</td>
+								</tr>
+								<tr>
+									<td rowspan="3">cn1520477988fvuc</td>
+									<td rowspan="3">图书销</td>
+									<td>俄罗斯当地图书销售</td>
+									<td>5</td>
+									<td>10%</td>
+									<td rowspan="3">某某某</td>
+								</tr>
+								<tr>
+									<td>俄罗斯当地图书销售</td>
+									<td>5</td>
+									<td>10%</td>
+								</tr>
+								<tr>
+									<td>俄罗斯当地图书销售</td>
+									<td>5</td>
+									<td>10%</td>
+								</tr>
+								<tr>
+									<td >cn1520477988fvuc</td>
+									<td >图书销</td>
+									<td>俄罗斯当地图书销售</td>
+									<td>5</td>
+									<td>10%</td>
+									<td >某某某</td>
+								</tr>
+								<tr>
+									<td rowspan="2">cn1520477988fvuc</td>
+									<td rowspan="2">图书销</td>
+									<td>俄罗斯当地图书销售</td>
+									<td>5</td>
+									<td>10%</td>
+									<td rowspan="2">某某某</td>
+								</tr>
+								<tr>
+									<td>俄罗斯当地图书销售</td>
+									<td>5</td>
+									<td>10%</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="layui-row" id="thisCRM" style="display: none;">
+						<h4 class="dgTit">CRM风险店铺</h4>
+						<table class="layui-table" lay-skin="line" >
+							<thead>
+								<tr>
+									<th>店铺ID</th>
+									<th>负责人</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>cn1520477988fvuc</td>
+									<td>某某某</td>
+								</tr>
+								<tr>
+									<td>cn1520477988fvuc</td>
+									<td>某某某</td>
+								</tr>
+								<tr>
+									<td>cn1520477988fvuc</td>
+									<td>某某某</td>
+								</tr>
+								<tr>
+									<td>cn1520477988fvuc</td>
+									<td>某某某</td>
+								</tr>
+								<tr>
+									<td>cn1520477988fvuc</td>
+									<td>某某某</td>
+								</tr>
+								<tr>
+									<td>cn1520477988fvuc</td>
+									<td>某某某</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- E=风险数据结束 -->
+		<!-- S=运营数据开始 -->
+		<div class="layui-row ">
+			<div class="dataAll" >
+				<h3>交易运营数据</h3>
+				<div class="layui-row lineh50" >
+					<span>
+						<a href="" class="smNav">昨日</a>
+						<input type="text" class="layui-input" id="test1" placeholder="选择年月">
+					</span>
+				</div>
+				<div class="layui-row dataTile "  >
+					<div class="layui-col-md4">
+						<div class="layui-row dateTream_in" >
+							<div class="layui-col-md5">
+								<div class="theAllDaFir" ><span>GMV</span></div>
+							</div>
+							<div class="layui-col-md7">8000</div>
+						</div>
+					</div>
+					<div class="layui-col-md4">
+						<div class="layui-row dateTream_in" >
+							<div class="layui-col-md5">
+								<div class="theAllDaSec" ><span>UV</span></div>
+							</div>
+							<div class="layui-col-md7">2000</div>
+						</div>
+					</div>
+					<div class="layui-col-md4">
+						<div class="layui-row dateTream_in" >
+							<div class="layui-col-md5">
+								<div class="theAllDaThr" ><span>订单数</span></div>
+							</div>
+							<div class="layui-col-md7">4000</div>
+						</div>
+					</div>
+				</div>
+				<div class="layui-row" id="theData">
+					<table class="layui-table" lay-skin="line" >
+						<thead>
+							<tr>
+							<th>店铺ID</th>
+							<th>行业</th>
+							<th>UV</th>
+							<th>订单数</th>
+							<th>GMV</th>
+							<th>GMV环比</th>
+							<th>负责人</th>
+						</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>cn1520477988fvuc</td>
+								<td>1</td>
+								<td>1000</td>
+								<td>1000</td>
+								<td>1000</td>
+								<td>1000</td>
+								<td>10.5%</td>
+							</tr>
+							<tr>
+								<td>cn1520477988fvuc</td>
+								<td>俄罗斯当地图书销售</td>
+								<td>1000</td>
+								<td>1000</td>
+								<td>1000</td>
+								<td>1000</td>
+								<td>10.5%</td>
+							</tr>
+							<tr>
+								<td>cn1520477988fvuc</td>
+								<td>俄罗斯当地图书销售</td>
+								<td>1000</td>
+								<td>1000</td>
+								<td>1000</td>
+								<td>1000</td>
+								<td>10.5%</td>
+							</tr>
+							<tr>
+								<td>cn1520477988fvuc</td>
+								<td>俄罗斯当地图书销售</td>
+								<td>1000</td>
+								<td>1000</td>
+								<td>1000</td>
+								<td>1000</td>
+								<td>10.5%</td>
+							</tr>
+							<tr>
+								<td>cn1520477988fvuc</td>
+								<td>俄罗斯当地图书销售</td>
+								<td>1000</td>
+								<td>1000</td>
+								<td>1000</td>
+								<td>1000</td>
+								<td>10.5%</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<!-- E=运营数据结束 -->
+		<!-- S=产品数据开始 -->
+		<div class="layui-row goods2 goods " >
+			<div class="layui-col-md12">
+			<h3>产品运营数据</h3>
+			<div class="layui-row">
+				<div id="container" class="container" style=""></div>
+			</div>
+			<div class="layui-row lineh50" >
+				<span>
+					<a href="" class="smNav">昨日</a>
+				</span>
+			</div>
+			</div>
+			<table class="layui-table" lay-skin="line" >
+				<thead>
+					<tr>
+					<th>店铺ID</th>
+					<th>行业</th>
+					<th>上新数量</th>
+					<th>负责人</th>
+				</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>cn1520477988fvuc</td>
+						<td>图书销售</td>
+						<td class="curs" onclick="numOpenIn();" class="pointer">1</td>
+						<td>某某某</td>
+					</tr>
+					<tr>
+						<td>cn1520477988fvuc</td>
+						<td>俄罗斯当地图书销售</td>
+						<td class="curs" onclick="numOpenIn();" class="pointer">1</td>
+						<td>某某某</td>
+					</tr>
+					<tr>
+						<td>cn1520477988fvuc</td>
+						<td>俄罗斯</td>
+						<td class="curs" onclick="numOpenIn();" class="pointer">1</td>
+						<td>某某某</td>
+					</tr>
+					<tr>
+						<td>cn1520477988fvuc</td>
+						<td>当地图书销售</td>
+						<td class="curs" onclick="numOpenIn();" class="pointer">1</td>
+						<td>某某某</td>
+					</tr>
+					<tr>
+						<td>cn1520477988fvuc</td>
+						<td>俄罗斯当地图书销售</td>
+						<td class="curs" onclick="numOpenIn();" class="pointer">1</td>
+						<td>某某某</td>
+					</tr>
+					<tr>
+						<td>cn1520477988fvuc</td>
+						<td>俄罗斯销售</td>
+						<td class="curs" onclick="numOpenIn();" class="pointer">1</td>
+						<td>某某某</td>
+					</tr>
+					<tr>
+						<td>cn1520477988fvuc</td>
+						<td>销售</td>
+						<td class="curs" onclick="numOpenIn();" class="pointer">1</td>
+						<td>某某某</td>
+					</tr>
+					<tr>
+						<td>cn1520477988fvuc</td>
+						<td>俄罗斯当地图书销售</td>
+						<td class="curs" onclick="numOpenIn();" class="pointer">1</td>
+						<td>某某某</td>
+					</tr>
+					<tr>
+						<td>cn1520477988fvuc</td>
+						<td>俄罗斯当地图书销售</td>
+						<td class="curs" onclick="numOpenIn();" class="pointer">1</td>
+						<td>某某某</td>
+					</tr>
+					<tr>
+						<td>cn1520477988fvuc</td>
+						<td>俄罗斯当地图书销售</td>
+						<td class="curs" onclick="numOpenIn();" class="pointer">1</td>
+						<td>某某某</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<!-- E=产品数据结束 -->
+	</div> 
+	<!-- E=主体内容 -->
+	<div id="mask_in" class="mask"></div>
+	<!-- S=产品ID浮窗内容 -->
+	<div id="numOpen" class="loadPage">
+		<table class="layui-table" lay-skin="line">
+			<thead>
+				<tr>
+				<th>产品ID</th>
+			</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>cn1520477988fvuc</td>
+				</tr>
+				<tr>
+					<td>cn1520477988fvuc</td>
+				</tr>
+				<tr>
+					<td>cn1520477988fvuc</td>
+				</tr>
+				<tr>
+					<td>cn1520477988fvuc</td>
+				</tr>
+				<tr>
+					<td>cn1520477988fvuc</td>
+				</tr>
+				<tr>
+					<td>cn1520477988fvuc</td>
+				</tr>
+				<tr>
+					<td>cn1520477988fvuc</td>
+				</tr>
+				<tr>
+					<td>cn1520477988fvuc</td>
+				</tr>
+				<tr>
+					<td>cn1520477988fvuc</td>
+				</tr>
+				<tr>
+					<td>cn1520477988fvuc</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<!-- E=产品ID浮窗内容 -->
+	<!-- E=浮窗内容 -->
+</body>
+<script src="./js/jquery-1.7.2.js"></script>
+<script src="./layui.js"></script>
+<script src="http://cdn.hcharts.cn/highcharts/highcharts.js"></script>
+<script src="./js/indexChild.js"></script>
+</html>
